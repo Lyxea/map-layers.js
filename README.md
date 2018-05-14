@@ -25,15 +25,15 @@ It's necessary to get lib folder containing :
   To start add following lines in head tag of page:
 ```html
 <!--SCRIPTS-->
-<script src="dist/lib.js"></script>
-<script src="dist/localization/messages_fr.js"></script>
-<script src="dist/map-layer-0.1.js"></script>
+<script src="dist/js/lib.js"></script>
+<script src="dist/localization/messages_en.js"></script>
+<script src="dist/js/map-layer.js"></script>
 
 <!--STYLES-->
-<link rel="stylesheet" type="text/css" href="dist/style.css">
+<link rel="stylesheet" type="text/css" href="dist/css/style.css">
 
-<!--Custom Style page-->
-<link rel="stylesheet" type="text/css" href="css/pagestyles.css">
+<!--My Own Page Custom Style -->
+<link rel="stylesheet" type="text/css" href="pagestyles.css">
 ```
 
 Insert script tag in page body with following line :
@@ -141,16 +141,18 @@ var layer = new mapLayer({dynSlider: {
                         }})  
 ```
 
-## GENERAL
-| variable      | type          | Default value  |   Description|
-| ------------- |:-------------:| -----:|-------------:|
-| `lang`     | string  | 'en'|Lang of module, actually English and French are diponible|
+## LANGUAGE
+Call your language file before map-layer.js
+Language file must be a object like trans = {"key":"value"}
+English and French languages are available. For more language, you can google trad :)
+
 ### Exemple
 Modify module lang to french :
 ```javascript
- var layer = new mapLayer({lang:'fr'}) 
+  <script src="dist/localization/messages_fr.js"></script>
+  <script src="dist/js/map-layer.js"></script>
 ```
-*To modify lang, it depends if file messages_'lang'.js exists*
+
 
 
 # LICENCE
