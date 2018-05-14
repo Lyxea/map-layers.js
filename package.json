@@ -1,0 +1,28 @@
+{
+  "name": "map-layers.js",
+  "version": "1.0.0",
+  "description": "Gulp requirements",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-insert": "^0.5.0",
+    "gulp-remove-use-strict": "^0.0.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lyxea/map-layers.js.git"
+  },
+  "author": "Lyxea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lyxea/map-layers.js/issues"
+  },
+  "homepage": "https://github.com/Lyxea/map-layers.js#readme"
+}
