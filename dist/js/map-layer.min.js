@@ -1,7 +1,7 @@
 /*!
  * map-layer.js
  * https://github.com/Lyxea/map-layers.js
- * Version: 0.1
+ * Version: 0.2
  *
  * Copyright 2018 Map-layers.js Contributors
  * Released under the Apache License 2.0

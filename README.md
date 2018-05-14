@@ -15,30 +15,25 @@ Firefox
 # REQUIREMENTS
 Note that this library depends on `jQuery >= 3.1.0` 
 It's necessary to get lib folder containing :
-`bootstrap.min.js`
-`bootstrap-slider.js`
-`geoMap.js`
-`jsonWriter.js`
-`dimensionSlider.js`
-`layerManager.js`
-`library.js`
-`saveLoadMap.js`
-`ol.js`
+`lib.js` (jquery 3.1.0 + bootstrap 3.3.7 + bootstrap-slider 9.8.1 + OpenLayers 4.0.1)
+`messages_[lang].js`
+`map-layer-0.1.js`
+`style.css` (font-awesome + bootstrap 3.3.7 + bootstrap-slider 9.8.1 + OpenLayers 4.0.1)
 
 
 # INSTALLATION
   To start add following lines in head tag of page:
 ```html
 <!--SCRIPTS-->
-<script src="lib/jquery-3.1.1.min.js"></script>
-<script src="js/map-layer.js"></script>
+<script src="dist/lib.js"></script>
+<script src="dist/localization/messages_fr.js"></script>
+<script src="dist/map-layer-0.1.js"></script>
 
 <!--STYLES-->
-<link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css">
-<link rel="stylesheet" href="lib/bootstrap-slider.css" />
-<link rel="stylesheet" href="lib/ol.css" type="text/css">
-<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/layerManager.css">
+<link rel="stylesheet" type="text/css" href="dist/style.css">
+
+<!--Custom Style page-->
+<link rel="stylesheet" type="text/css" href="css/pagestyles.css">
 ```
 
 Insert script tag in page body with following line :
