@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+    <title>AquaNES GIS module</title>
+	<!--SCRIPT-->
+	<script src="lib/jquery-3.1.1.min.js"></script>
+	<script src="lib/bootstrap-slider.js"></script>
+	<script src="lib/bootstrap.min.js"></script>
+	<script src="dist/localization/messages_fr.js"></script>
+    <script src="dist/map-layer-0.1.js"></script>
+
+    <!--STYLES-->
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/bootstrap-slider.css" />
+	<link rel="stylesheet" href="lib/ol.css" type="text/css">
+	<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/map-layer-0.1.css">
+    
+    <!--Custom Style page-->
+    <link rel="stylesheet" type="text/css" href="css/pagestyles.css">
+  </head>
+  <body>
+	
+	<div class="content">
+		<div id="map" class="map"></div>
+		<div id="slider_elev" class="dim-slider elev-slider" style="display: none;">
+		</div>
+		<div id="slider_time" class="dim-slider time-slider" style="display: none;">
+		</div>
+		
+	</div>
+	<div id="layerManager" class="layerManager">
+        <div class="layer-manager-title">
+            <div class="logo">
+                <a href="http://aquanes.eu">
+                    <img src="logo.png" alt="AquaNES" title="AquaNES">
+                </a>
+                <div class="title">
+                    <h1 style="margin: 0px; color: #868686;font-size: 21px;">
+                        GIS module
+                    </h1>
+                </div>
+            </div>
+        </div>
+	<p class="map-title map-title-first informations-tab-empty">List of available layers</p></div>
+	<div id="layerManagerModal" ></div>
+	<div id="LMSaveMapModal"></div>
+    <script>
+            var layer = new mapLayer()  
+    </script>
+  </body>
+</html>

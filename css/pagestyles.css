@@ -1,0 +1,79 @@
+.content {
+    float: left;
+    width: 70%;
+    height: 100%;
+    position: fixed
+}
+
+#contenairConfig {
+    position: absolute;
+    bottom: 0;
+    width: -moz-calc(30%);
+    width: -webkit-calc(30%);
+    width: calc(30%);
+}
+
+.map {
+    float: left;
+    width: 70%;
+    height: 100%;
+    position: fixed
+}
+
+#layerManager {
+    float: right;
+    width: -moz-calc(30%);
+    width: -webkit-calc(30%);
+    width: calc(30%);
+}
+
+.map-title {
+    background: #0054a5;
+    padding: 5px;
+    margin: 0px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.logo {
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-right: 10%;
+}
+
+
+
+button[type=submit] {
+    margin-top: 10px;
+}
+
+.layer-manager-title {
+    text-align: center;
+    padding: 8px
+}
+
+.CRUD-layer-manager,
+.panel-primary>.panel-heading,
+input[type='checkbox']:checked:after,
+.layer-conf .col3 {
+    background: #0054a5
+}
+.layer-list label{
+    color:#0054a5
+}
+.btn-primary
+{
+    background:#84c759;
+   
+}
+
+i:hover,
+.modal-title {
+   color:#84c759 !important;
+}
+
+
+.btn-primary{
+ border:none !important
+}
+

@@ -1,0 +1,550 @@
+i,
+input[type='checkbox']:checked:after,
+.btn {
+
+ -webkit-transition: all 0.6s ease-in;
+ -moz-transition: all 0.6s ease-in;
+ -ms-transition: all 0.6s ease-in;
+ -o-transition: all 0.6s ease-in;
+ transition: all 0.6s ease-in;
+ transition-property: all;
+ transition-duration: 0.6s;
+ transition-timing-function: ease-in;
+ transition-delay: initial;
+}
+#layerList .slider.slider-horizontal {
+    width: 100px;
+    height: 16px
+}
+.content .layer-conf .row {
+    margin: 0!important
+}
+#layerList .slider.slider-horizontal .slider-handle {
+    background: #454545;
+    width: 12px;
+    height: 12px;
+}
+
+.slider.slider-horizontal .slider-track {
+    height: 4px;
+}
+.layer-conf .col1 {
+    width: 40px;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+    background: #efefef;
+    vertical-align: top;
+    padding: 7px;
+}
+.layer-conf .col2 {
+    border-bottom: 1px solid #efefef;
+    padding: 10px;
+    opacity: 1;
+    height: auto;
+    overflow: hidden
+}
+.layer-conf .col2 .line2 {
+    text-align: center
+}
+.layer-conf.inactiveLayer .col2 .line2 {
+    opacity: 0;
+    height: 0
+}
+.layer-conf .col3 {
+    width: 30px;
+    text-align: center;
+    background: #454545;
+    border-bottom: 1px solid #cccccc;
+}
+.layer-list .col3 i {
+    color: #FFFFFF
+}
+.layer-list label {
+    color: #454545;
+    line-height: normal;
+    padding: 0;
+    padding-left: 8px
+}
+.layer-list .layer-conf.inactiveLayer label {
+    color: #AAA!important;
+}
+.layer-list i {
+    border-radius: 3px;
+    padding: 3px;
+    color: #454545;
+}
+
+ .layer-conf .col2 .col-md-1 {
+    padding: 0
+}
+.trash-layer {
+    cursor: pointer;
+}
+.fa-ellipsis-h {
+    float: right;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.right-separator {
+    float: right;
+    margin-left: 10px;
+    border-left: 2px solid #d1d1d1;
+    height: 1em;
+}
+.separator {
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+    margin-bottom: 10px;
+    border-top: 1px dotted #efefef;
+    height: 0;
+}
+.left-separator {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-left: 2px solid #d1d1d1;
+    height: 1em;
+}
+.layer-icon {
+    margin-left: 10px;
+    margin-right: 0px;
+}
+.fa-chevron-up {
+    display: inline-block;
+    margin-right: 1px;
+    cursor: pointer;
+}
+.fa-chevron-down {
+    display: inline-block;
+    margin-right: 1px;
+    cursor: pointer;
+}
+.opacity-percent {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 6px
+}
+.zoom-layer {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 1px
+}
+.layer-list i.eye-visibility {
+    cursor: pointer;
+    background: none;
+    color: #454545;
+    font-size: 20px
+}
+.layer-list i.eye-visibility.fa-eye-slash {
+    cursor: pointer;
+    color: #ccc;
+}
+ .layer-list .inactiveLayer i.eye-visibility {
+    color: #CCC;
+}
+.get-legend {
+    margin-right: 1px;
+}
+.CRUD-layer-manager {
+    text-align: center;
+    background: #454545
+}
+.CRUD-layer-manager span {
+    margin:0 5%;
+    cursor: pointer;
+    color:#FFF  ; 
+}
+
+.group{
+    background-color: #efefef;
+}
+
+.group .group-eye-visibility, .group .group-minus {
+    cursor: pointer;
+}
+
+.group .group-eye-visibility{
+    margin: 5px;
+}
+
+.group .col2b{
+    width: 80px;
+    text-align: center;
+}
+
+.form-group.base-map {
+
+    margin-bottom: 0;
+    background: #dddddd
+}
+.form-group.base-map .col1{
+    width: 40px;
+    text-align: center;
+    background: #dddddd;
+}
+.form-group.base-map.inactiveLayer .col1{
+    background: #dddddd!important;
+}
+
+.form-group.base-map .col1 .fa{
+    color:#454545;
+    font-size: 20px;
+    cursor: pointer
+}
+.form-group.base-map.inactiveLayer .col1 .fa{
+    color:#707c86!important;
+    
+}
+
+.form-group.base-map.inactiveLayer .col2{background:#313d48}
+.form-group.base-map.inactiveLayer select{background:#707c86;}
+.form-group.base-map .col2{
+    text-align: left;
+    padding:10px
+}
+.form-group.base-map .slider.slider-horizontal {
+    width: 35%;
+    display: inline-block;
+    margin-left: 15px
+}
+.form-group.base-map .slider.slider-horizontal .slider-handle {
+    background: #454545;
+    width: 15px;
+    height: 15px;
+}
+
+.form-group.base-map .slider.slider-horizontal .slider-track {
+    height: 4px;
+}
+.form-group.base-map .slider-selection {
+    background: #454545;
+}
+.form-group.base-map.inactiveLayer .slider-selection, .form-group.base-map.inactiveLayer .slider.slider-horizontal .slider-handle{
+    background:#707c86;
+}
+
+input[type='checkbox'] {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 10px
+}
+
+input[type='checkbox']:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 18px;
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    border-radius: 2px;
+    background: #d2d6de;
+    color: #FFF
+}
+
+input[type='checkbox']:checked:after {
+    content: "✓";
+    line-height: 18px;
+    text-align: center;
+    background: #454545
+}
+.layer-list {
+    max-height: 200px;
+    overflow-y: auto;
+    color: #CCC
+}
+/***
+LES SLIDER
+*/
+
+.sl-left {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+     color:#dedede
+}
+.sl-right {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+     color:#dedede
+}
+.sl-up {
+    cursor: pointer;
+    vertical-align: top;
+    color:#dedede
+}
+.sl-down {
+    cursor: pointer;
+    vertical-align: bottom;
+    color:#dedede
+}
+.time-slider {
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    padding-left: 44px;
+    z-index: 5;
+}
+
+.time-slider .slider {
+    margin-right: 20px;
+    margin-left: 20px;
+        padding-top: 4px
+
+}
+.slider.slider-vertical .slider-track {
+    width: 4px
+}
+.slider.slider-horizontal .slider-track {
+    height: 4px;
+}
+
+ .slider-handle{
+    width:12px;
+    height: 12px;
+    cursor: pointer;
+}
+.slider-tick{
+    width: 12px;
+    height: 12px;
+    opacity:1;
+     cursor: pointer;
+}
+
+@media (min-width: 1280px) {
+    .time-slider .slider {
+        width: 85%;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+.elev-slider {
+    display: grid;
+    left: 0;
+
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    top:0!important;
+    height: 100%;
+    -webkit-transition: -webkit-transform .3s ease-in-out,    width .3s ease-in-out;
+    -moz-transition: -moz-transform .3s ease-in-out,    width .3s ease-in-out;
+    -o-transition: -o-transform .3s ease-in-out,    width .3s ease-in-out;
+    transition: transform .3s ease-in-out,    width .3s ease-in-out;
+    z-index:10
+}
+.elev-slider span.textColor1{
+        transform: rotate(90deg);
+        height: 20px;
+           width: 20px;
+           padding-left: 15px;
+}
+.sidebar-mini.sidebar-collapseM .elev-slider {
+    left: 50px
+}
+body.sidebar-collapse .content-wrapper .elev-slider{
+    left: 50px
+}
+.time-slider {
+    display: inline-block;
+    vertical-align: middle;
+   
+    background-color: white;
+    padding-top: 2px;
+    padding-right: 1%;
+    bottom: 0;
+   
+}
+.sidebar-mini.sidebar-collapse .content-wrapper .time-slider {
+    margin-left: 92px
+}
+.time-slider span.textColor1{
+
+}
+body.sidebar-collapseM .content-wrapper .time-slider {
+    margin-left: 92px
+}
+.elev-slider .slider-vertical {
+    width: 16px;
+    vertical-align: middle;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 2px;
+}
+.elev-slider .slider-selection {
+    background: #454545;
+}
+.elev-slider .slider-track-high {
+    background: #cccccc;
+}
+.elev-slider .slider-handle {
+    background: #636b6f;
+}
+/*Tous Les cercles autre que celui de selection*/
+
+.slider-tick-container .slider-tick {
+    background: #cccccc;
+}
+/*On overide les cercles autre que selection faisant partie de la selection*/
+
+.slider-tick-container .in-selection {
+    background: #454545;
+}
+/*la partie seléctionnée*/
+
+.slider-selection {
+    background: #454545;
+}
+/*la partie qui reste selctionnable*/
+
+.slider-track-high {
+    background: #cccccc;
+}
+/*Le cercle de selection*/
+
+.slider-handle {
+    background: #636b6f;
+}
+.scale-line {
+    position: absolute;
+    z-index: 20;
+    bottom: 55px;
+    left: 295px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+}
+.sidebar-collapse .scale-line {
+     bottom: 55px;
+     left: 115px;
+    
+}
+.ol-scale-line {
+    position: relative;
+    bottom: 0;
+    left: 0px;
+    border: 1px solid #636b6f;
+    border-top: none;
+    font-size: 12px;
+    text-align: center;
+    margin: 1px;
+    will-change: contents, width;
+}
+.base-map select {
+    width: 45%;
+    display: inline-block;
+}
+
+
+.layer-conf label, .group-name label{
+    cursor: text;
+}
+
+.layer-conf input, .group-name input{
+    color:rgb(12, 1, 1);
+}
+
+
+
+/*****
+*LIBRARY
+*/
+
+.open-workspace {
+    float: right;
+}
+.workspace-link {
+    cursor: pointer;
+}
+.modal .modal-body {
+    max-height: 420px;
+    overflow-y: auto;
+}
+.modal-content{
+    border-radius: 0
+}
+
+
+.modal-body .list-layers .list-group-item label{
+    display: block;
+}
+.modal-body .list-layers .list-group-item label input{
+    vertical-align: top;
+}
+.modal-body .list-layers .list-group-item label .layer-description{
+    display: inline-block;
+}
+.modal-backdrop.in{
+    opacity: 0.8;
+}
+
+
+.panel-primary>.panel-heading{
+    background: #454545;
+    border-radius: 0
+}
+.panel-primary{
+    border:none
+}
+/******
+*SAVELOAD
+*/
+
+.modal-separator{
+    border-bottom: 1px solid #e5e5e5;
+    margin: 10px;
+}
+
+
+/*****
+*GEOMAP
+*/
+
+
+.ol-scale-line-inner {
+    color: #636b6f;
+    border-color: #636b6f;
+}
+
+
+.modal-footer .group-name{
+    padding-bottom: 10px;
+}
+
+.modal-footer .cancel{
+    float: left;
+}
+.content {
+    float: left;
+    width: 70%;
+    height: 100%;
+    position: fixed
+}
+
+.map {
+    float: left;
+    width: 70%;
+    height: 100%;
+    position: fixed
+}
+
+#layerManager {
+    float: right;
+    width: -moz-calc(30%);
+    width: -webkit-calc(30%);
+    width: calc(30%);
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .time-slider span.textColor1{
+        display: block
+    }
+}
