@@ -35,6 +35,14 @@ gulp.task('build', function() {
         .pipe(gulp.dest(jsDest));
 });
 
+gulp.task('build-lib', function() {
+    return gulp.src(["lib/jquery-3.1.1.min.js","lib/bootstrap-slider.js","lib/bootstrap.min.js", "lib/ol.js"])
+        .pipe(concat('lib.js'))
+		.on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
+        .pipe(gulp.dest(jsDest));
+});
+
+
 
 gulp.task('minify', function() {
     return gulp.src(jsFiles)
@@ -47,7 +55,8 @@ gulp.task('minify', function() {
 });
 
 
-// Tâche "build"
+// Tâche "build-all" = build all
+gulp.task('build-all', ['build',  'minify', 'build-lib']);
 //gulp.task('buildCss', ['css']);
 
 // Tâche "prod" = Build + minify
