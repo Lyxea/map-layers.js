@@ -5,6 +5,7 @@ var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 var insert = require('gulp-insert');
 var gutil = require('gulp-util');
+var concatCss = require('gulp-concat-css');
 var removeUseStrict = require("gulp-remove-use-strict");
 
 //script paths
@@ -42,7 +43,12 @@ gulp.task('build-lib', function() {
         .pipe(gulp.dest(jsDest));
 });
 
-
+gulp.task('build-css', function () {
+  return gulp.src(["lib/*.css", "lib/font-awesome/css/font-awesome.min.css"])
+    .pipe(concatCss("style.css"))
+	.on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
+    .pipe(gulp.dest(jsDest));
+});
 
 gulp.task('minify', function() {
     return gulp.src(jsFiles)
@@ -56,7 +62,7 @@ gulp.task('minify', function() {
 
 
 // Tâche "build-all" = build all
-gulp.task('build-all', ['build',  'minify', 'build-lib']);
+gulp.task('build-all', ['build',  'minify', 'build-lib', 'build-css']);
 //gulp.task('buildCss', ['css']);
 
 // Tâche "prod" = Build + minify

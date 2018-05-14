@@ -274,7 +274,6 @@ var geoMap = function(mapDiv, geoServerURL,keyBing){
      * @param {callback} callback - function to call when the map moves
      */
     this.addCallbackOnMoveMap = function(callback){
-        console.log(callback)
         callbackMoveMap.push(callback);
     }
 
