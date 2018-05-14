@@ -215,7 +215,7 @@ var dimensionSlider = function(elevDiv, timeDiv){
      */
     this.updateTimeSlider = function(idLayer){
 
-        let timeValues = Object.keys(slTimeValues);
+        var timeValues = Object.keys(slTimeValues);
     
         var timeTransformValues = [];
         $.each(timeValues, function(index, value){

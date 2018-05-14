@@ -4,6 +4,7 @@ var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 var insert = require('gulp-insert');
+var gutil = require('gulp-util');
 var removeUseStrict = require("gulp-remove-use-strict");
 
 //script paths
@@ -30,7 +31,7 @@ gulp.task('build', function() {
         .pipe(concat(exportName + '.js'))
 		.pipe(removeUseStrict())
 		.pipe(insert.prepend(header))
-		
+		.on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
         .pipe(gulp.dest(jsDest));
 });
 
@@ -38,14 +39,16 @@ gulp.task('build', function() {
 gulp.task('minify', function() {
     return gulp.src(jsFiles)
         .pipe(concat(exportName + '.min.js'))
-		.pipe(insert.prepend(header))
-		//.pipe(removeUseStrict())
+		.pipe(removeUseStrict())
         .pipe(uglify())
+		.pipe(insert.prepend(header))
+		.on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
         .pipe(gulp.dest(jsDest));
 });
 
+
 // Tâche "build"
-//gulp.task('build', ['css']);
+//gulp.task('buildCss', ['css']);
 
 // Tâche "prod" = Build + minify
 gulp.task('prod', ['build',  'minify']);

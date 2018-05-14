@@ -210,7 +210,7 @@ var dimensionSlider = function (elevDiv, timeDiv) {
      * @param {int} idLayer - L'ID du layer (retourné par geoMap())
      */
     this.updateTimeSlider = function (idLayer) {
-        let timeValues = Object.keys(slTimeValues);
+        var timeValues = Object.keys(slTimeValues);
         var timeTransformValues = [];
         $.each(timeValues, function (index, value) {
             timeTransformValues.push(ISO8601ToFloat(value));
